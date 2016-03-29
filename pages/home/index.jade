@@ -1,0 +1,26 @@
+include ../icon.jade
+
+doctype html
+html(lang='en')
+  head
+    include ../head.jade
+    title=content.pageTitle
+  body.page-home
+    #svg-bundle
+      include ../bundle.svg
+    .parallax
+      .parallax__group.group-a
+        .parallax__layer.parallax__layer--back
+          .text-xs-center
+            img(src='http://i.imgur.com/qrWkv85.jpg')
+        .parallax__layer.parallax__layer--base
+          .text-xs-center
+            img(src='http://vignette1.wikia.nocookie.net/healthyrecipes/images/4/41/Swiss_cheese.png/revision/latest?cb=20100603101437')
+      .parallax__group.group-b
+        .parallax__layer.parallax__layer--back
+          .text-xs-center
+            img(src='https://cdn.empowernetwork.com/user_images/post/2013/01/01/7/58/2ec3/540_293_resize_20130101_7582ec3d4af9c6095b62d6d6bcaec701_jpg.jpg')
+        .parallax__layer.parallax__layer--base
+          .text-xs-center
+            img(src='http://pngimg.com/upload/fish_PNG10533.png')
+    script(src='#{meta.relativePathToRoot}/bundle.js')
