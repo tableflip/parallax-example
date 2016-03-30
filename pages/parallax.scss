@@ -1,3 +1,6 @@
+// This file should probably remain as it is, and implementation-specific parallax details
+// should be entered in main.scss
+
 @media screen and (min-width: 40em) {
   @supports ((perspective: 1px) and (not (-webkit-overflow-scrolling: touch))) {
     .parallax {
