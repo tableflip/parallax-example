@@ -28,11 +28,6 @@ $display1-weight: 500;
 @import 'bootstrap/scss/bootstrap';
 @import './parallax';
 
-
-// .parallax__layer {
-//   padding: 100vh 0;
-// }
-
 .group-a {
   z-index: 1;
   .parallax__layer {
@@ -41,6 +36,9 @@ $display1-weight: 500;
   .parallax__layer--base {
     transform: translateZ(0) translateY(500px);
   }
+  // translateZ determines how far in the background the layer should appear
+  // 0 will make it scroll at the same speed as the page, more negative scrolls slower
+  // to retain expected render size, it should be scaled by 1 - translateZ / perspective
   .parallax__layer--back {
     transform: translateZ(-1px) scale(2);
   }
